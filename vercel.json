@@ -1,0 +1,20 @@
+{
+    "builds": [
+      {
+        "src": "angular.json",
+        "use": "@vercel/static-build",
+        "config": {
+          "buildCommand": "ng build --prod",
+          "outputDirectory": "dist/henco-dashboard"
+        }
+      }
+    ],
+    "routes": [
+      {
+        "src": "/(.*)",
+        "dest": "/index.html"
+      }
+    ]
+
+  }
+  
