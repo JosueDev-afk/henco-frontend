@@ -87,7 +87,9 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.css",
+              "src/app/paisas-mas-importaciones-paisas-mas-importaciones.css",
+              "src/app/user-list-component.css"
             ],
             "scripts": []
           }

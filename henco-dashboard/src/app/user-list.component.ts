@@ -3,7 +3,7 @@ import { UserService } from './services/user.service';
 
 @Component({
   selector: 'app-user-list',
-  template: `
+  template:`
     <h2>Henco DataBase</h2>
     <table class="table">
       <thead>
@@ -79,7 +79,8 @@ import { UserService } from './services/user.service';
         </tr>
       </tbody>
     </table>
-  `
+    `,
+    styleUrls: ['./user-list-component.css']
 })
 export class UserListComponent implements OnInit {
   users: any[];
