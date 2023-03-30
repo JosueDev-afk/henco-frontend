@@ -9,6 +9,12 @@ import { PaisasMasImportacionesComponent } from './paisas-mas-importaciones/pais
 import { DatabaseComponent } from './database/database.component';
 import { PaisesMasExportacionesComponent } from './paises-mas-exportaciones/paises-mas-exportaciones.component';
 import { TipoProductoExportacionesPaisComponent } from './tipo-producto-exportaciones-pais/tipo-producto-exportaciones-pais.component';
+import { NavbarComponent } from './navbar/navbar.component';
+import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatListModule } from '@angular/material/list';
+import { MatIconModule } from '@angular/material/icon';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -17,13 +23,19 @@ import { TipoProductoExportacionesPaisComponent } from './tipo-producto-exportac
     PaisasMasImportacionesComponent,
     DatabaseComponent,
     PaisesMasExportacionesComponent,
-    TipoProductoExportacionesPaisComponent
+    TipoProductoExportacionesPaisComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
-  ],
+    HttpClientModule,
+    MatSidenavModule,
+    MatToolbarModule,
+    MatListModule,
+    MatIconModule,
+    BrowserAnimationsModule
+    ],
   providers: [],
   bootstrap: [AppComponent]
 })
