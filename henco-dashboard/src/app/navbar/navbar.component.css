@@ -17,5 +17,12 @@
 }
 mat-toolbar {
   background-color: #ffa420
-  ; /* color rojo */
 }
+
+.btn-primary{
+  background-color: #ffa420
+}
+.btn{
+  border-color: #FF8000;
+}
+

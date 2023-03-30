@@ -5,13 +5,13 @@
       [opened]="(isHandset$ | async) === false">
     <mat-toolbar>Menu</mat-toolbar>
     <mat-nav-list>
-      <a mat-list-item class="nav-link active" routerLink="user-list">
+      <a mat-list-item class="nav-link active btn btn-primary" routerLink="user-list">
         Base de datos</a>
-      <a mat-list-item class="nav-link active text-truncate d-none d-md-inline-block" routerLink="paisas-mas-importaciones">
+      <a mat-list-item class="nav-link active text-truncate d-none d-md-inline-block btn btn-primary" routerLink="paisas-mas-importaciones">
         Paises con mas <br>importaciones</a>
-      <a mat-list-item class="nav-link active text-truncate d-none d-md-inline-block" routerLink="paises-mas-exportaciones">
+      <a mat-list-item class="nav-link active text-truncate d-none d-md-inline-block btn btn-primary" routerLink="paises-mas-exportaciones">
         Paises con mas <br>exportaciones</a>
-        <a mat-list-item class="nav-link active text-truncate d-none d-md-inline-block" routerLink="producto-exportacion">
+        <a mat-list-item class="nav-link active text-truncate d-none d-md-inline-block btn btn-primary" routerLink="producto-exportacion">
           Tipo de producto que <br>cada país exportó</a>
       <!--<a mat-list-item href="#">Link 3</a>-->
     </mat-nav-list>
@@ -26,7 +26,7 @@
         *ngIf="isHandset$ | async">
         <mat-icon aria-label="Side nav toggle icon" >menu</mat-icon>
       </button>
-      <span >Henco Dashboard</span>
+      <img class="imagen" src="../../assets/Logo-Henco-45.png">
     </mat-toolbar>
     <!-- Add Content Here -->
     <router-outlet></router-outlet>
