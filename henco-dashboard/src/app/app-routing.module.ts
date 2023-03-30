@@ -5,6 +5,7 @@ import { UserListComponent } from './user-list.component';
 import { DatabaseComponent } from './database/database.component';
 import { PaisesMasExportacionesComponent } from './paises-mas-exportaciones/paises-mas-exportaciones.component';
 import { TipoProductoExportacionesPaisComponent } from './tipo-producto-exportaciones-pais/tipo-producto-exportaciones-pais.component';
+import { NavbarComponent } from './navbar/navbar.component';
 
 const routes: Routes = [
   {path: '', redirectTo: '/inicio', pathMatch: 'full'},
@@ -12,7 +13,8 @@ const routes: Routes = [
   {path: 'user-list', component: UserListComponent},
   {path: 'database', component: DatabaseComponent},
   {path: 'paises-mas-exportaciones', component: PaisesMasExportacionesComponent},
-  {path: 'producto-exportacion', component: TipoProductoExportacionesPaisComponent}
+  {path: 'producto-exportacion', component: TipoProductoExportacionesPaisComponent},
+  {path: 'navbar', component: NavbarComponent}
 ];
 
 @NgModule({
