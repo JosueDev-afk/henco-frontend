@@ -15,6 +15,9 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatListModule } from '@angular/material/list';
 import { MatIconModule } from '@angular/material/icon';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { PrediccionExportacionComponent } from './prediccion-exportacion/prediccion-exportacion.component';
+import { PrediccionImportacionComponent } from './prediccion-importacion/prediccion-importacion.component';
+import { TipoProductoImportacionesPaisComponent } from './tipo-producto-importaciones-pais/tipo-producto-importaciones-pais.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +27,10 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     DatabaseComponent,
     PaisesMasExportacionesComponent,
     TipoProductoExportacionesPaisComponent,
-    NavbarComponent
+    NavbarComponent,
+    PrediccionExportacionComponent,
+    PrediccionImportacionComponent,
+    TipoProductoImportacionesPaisComponent
   ],
   imports: [
     BrowserModule,

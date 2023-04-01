@@ -6,6 +6,9 @@ import { DatabaseComponent } from './database/database.component';
 import { PaisesMasExportacionesComponent } from './paises-mas-exportaciones/paises-mas-exportaciones.component';
 import { TipoProductoExportacionesPaisComponent } from './tipo-producto-exportaciones-pais/tipo-producto-exportaciones-pais.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { PrediccionExportacionComponent } from './prediccion-exportacion/prediccion-exportacion.component';
+import { PrediccionImportacionComponent } from './prediccion-importacion/prediccion-importacion.component';
+import { TipoProductoImportacionesPaisComponent } from './tipo-producto-importaciones-pais/tipo-producto-importaciones-pais.component';
 
 const routes: Routes = [
   {path: '', redirectTo: '/inicio', pathMatch: 'full'},
@@ -14,7 +17,10 @@ const routes: Routes = [
   {path: 'database', component: DatabaseComponent},
   {path: 'paises-mas-exportaciones', component: PaisesMasExportacionesComponent},
   {path: 'producto-exportacion', component: TipoProductoExportacionesPaisComponent},
-  {path: 'navbar', component: NavbarComponent}
+  {path: 'navbar', component: NavbarComponent},
+  {path: 'prediccion-exp', component: PrediccionExportacionComponent},
+  {path: 'prediccion-imp', component: PrediccionImportacionComponent},
+  {path: 'producto-importacion', component: TipoProductoImportacionesPaisComponent}
 ];
 
 @NgModule({
